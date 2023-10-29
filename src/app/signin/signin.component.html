@@ -1,0 +1,23 @@
+<link href="app.component.css">
+<body>
+<span><h2 style="background-color: aqua;border-color: black;">USER DETAILS</h2></span>
+<nav>
+  <a  routerLink="/signup"><img src="/assets/images/SignUp.png" width="80px" height="80px"/><br>&nbsp;CREATE A NEW ACCOUNT&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- <a routerLink="/home"><img src="/assets/images/Home.png" width="40px" height="40px"/></a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+</nav>
+
+<div>
+  <h2 style="font-family: Cambria;">Sign In</h2>
+  <form #signInForm="ngForm" (ngSubmit)="signIn(signInForm)">
+    <label for="email" style="font-family: Arial;font-weight: bold;color: blue;">Email:</label>
+    <input type="text" class="email" id="email" [(ngModel)]="email" name="email" placeholder="Enter your Email-id "
+    style="border-style: groove; border-color: blueviolet;" required><br><br>
+
+    <label for="password"style="font-family: Arial;font-weight: bold;color: blue">Password:</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Enter your password" 
+    style="border-style: groove; border-color: blueviolet;" required><br><br>
+
+    <button type="submit">Sign In</button>
+  </form>
+</div>
+</body>

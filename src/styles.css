@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    background: lightblue; 
+    text-align: center;
+    text-wrap: balance;
+}
+input{
+
+}
+button{
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+
+}
